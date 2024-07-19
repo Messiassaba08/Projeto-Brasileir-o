@@ -1,9 +1,5 @@
 # Analise de dados da série A do campeonato brasileiro entre 2013-2023
 
-***** Corrigir cartões por temporada e não ano e corrigir Correlação pontos x Saldos de gols *****
-
-
-
 Projeto criado para praticar o uso de Figma, Power BI e Estatística na análise de dados da série A do campeonato brasileiro de futebol de 2013 a 2023.
 - Link do Projeto concluído: https://app.powerbi.com/reportEmbed?reportId=c9745383-e81c-4d2a-bb91-61aae2911182&autoAuth=true&ctid=64126139-4352-4cd7-b1fb-2a971c6f69a6
 - Link da base de dados: https://www.kaggle.com/datasets/victorhts/brasileiro-srie-a-resultados-2013-2023
@@ -95,12 +91,26 @@ Como são poucos clubes, utilizei o gráfico rosca que nos dá toda informação
 ![card](https://github.com/user-attachments/assets/ac90ca77-88d0-4997-ae5c-830b91c31029)
 
 Observa-se, por meio do gráfico de linhas cartões amarelo x ano, uma tendência de crescimento do número de cartões amarelos ao longo dos anos. O número de cartões é proporcional ao número de faltas que é proporcional ao tempo de paralisação dos jogos. Dessa forma, percebe-se que deveria haver mudançar em relação ao tempo de jogo. Percebemos essa mudança após a copa de 2022 com o aumento do número de acréscimos em todo o mundo, seguindo o padrão da copa. Além disso, entende-se que houve um aumento do rigor por parte dos árbitros ou maior indisciplina por parte dos times, o que seria melhor avaliado em dados mais aprofundados.
+Fonte: https://ge.globo.com/espiao-estatistico/noticia/2023/05/02/brasileirao-inicia-com-aumento-de-56percent-nos-acrescimos-veja-balanco.ghtml
 
 ![dv](https://github.com/user-attachments/assets/814c5a94-8899-4b1a-b2fb-90c8a4fd401b)
 
-Uma linha de tendência horizontal sugere que, dentro do intervalo de dados observados, não há uma relação linear perceptível entre as variáveis representadas no gráfico de dispersão. Nesse sentido, entende-se que a quantidade de cartões amarelos não tem impacto no aproveitamento das equipes.
+Uma linha de tendência quase horizontal, mas tendendo para baixo, sugere que há uma pequena relação negativa entre as variáveis representadas no gráfico de dispersão. À medida que os valores da variável no eixo X aumentam, os valores da variável no eixo Y diminuem um pouco, mas essa relação não é muito forte.
 
 ### Cartões Vermelhos
+
+![cva](https://github.com/user-attachments/assets/ce79d04b-1638-4ae4-b899-d468e75adb56)
+
+Percebe-se um leve aumento do número de cartões vermelhos, não tão expressivo quando o número de cartões amarelos, mas devemos levar em consideração que a incidência de cartões vermelhos é menor.
+
+![correcvca](https://github.com/user-attachments/assets/ea4e23bd-0e39-438c-b453-176da37bbc84)
+
+A correlação entre cartões amarelos e vermelhos segue uma linha de tendência levemente inclinada para cima, indicando que pode haver influência, mas que não há um grande nível de significância.
+
+### Gols
+
+
+
 
 
 
