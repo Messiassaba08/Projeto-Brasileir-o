@@ -33,5 +33,10 @@ Observação: Gols contra = tomados pela equipe. Gols pró = Marcados pela equip
 - Qual a relação entre Pontos e Saldo de Gols?
 - Qual a relação entre Posição e Saldo de Gols?
 - Quais os clubes com maior média de gols por temporada?
-## Aproveitamento
+### Aproveitamento
+- Quais times disputaram mais temporadas?
+- Qual a média de aproveitamento por estado?
+- Quais times tiveram maior aproveitamento médio por temporada
+### Campeões
+- Gostaria de vizualizar a soma de todos os dados em uma única tabela
 - 
