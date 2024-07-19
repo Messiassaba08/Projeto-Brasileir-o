@@ -27,16 +27,17 @@ Inicialmente, antes de manipularmos os dados, devemos nos perguntar o que querem
 - Existe uma relação forte entre o número de cartões amarelos e o número de cartões vermelhos?
 - Quais os clubes com maior média de cartões vermelhos por temporada?
 ### Gols: 
-Observação: Gols contra = tomados pela equipe. Gols pró = Marcados pela equipe.
+*Observação: Gols contra = tomados pela equipe. Gols pró = Marcados pela equipe.*
 - Qual a média geral de gols pró por temporada? Além disso, gostaria de poder comparar a média de gols pró geral com a média invidial dos clubes.
 - Qual a média geral de gols contra por temporada? Além disso, gostaria de poder comparar a média de gols contra geral com a média invidial dos clubes.
 - Qual a relação entre Pontos e Saldo de Gols?
 - Qual a relação entre Posição e Saldo de Gols?
 - Quais os clubes com maior média de gols por temporada?
-### Aproveitamento
+### Aproveitamento:
 - Quais times disputaram mais temporadas?
 - Qual a média de aproveitamento por estado?
 - Quais times tiveram maior aproveitamento médio por temporada
-### Campeões
+### Campeões:
 - Gostaria de vizualizar a soma de todos os dados em uma única tabela
-- 
+- Quais times fizeram mais pontos ao longo de todas temporadas?
+- Quais foram os campeões e quantos títulos tiveram cada um?
