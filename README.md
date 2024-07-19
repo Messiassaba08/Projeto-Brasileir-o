@@ -71,7 +71,7 @@ Utilizei o gráfico de barras para esta análise com o objetivo de evidenciar os
 Usada a mesma lógica que os cartões amarelos
 ### Gols: 
 #### 4 primeiras perguntas 
-utilizamos a mesma lógica das anteriores
+utilizamos a mesma lógica das anteriores. Cada ponto representa o saldo de gols e aproveitamento separador por time e ano, ou seja, para o flamengo que disputou 11 temporadas existem 11 pontos. Dessa forma, teremos uma maior quantidade de dados e o os valores terão uma proporção real, nesse exemplo, de aproveitamento x saldo de gols.
 #### Quais os clubes com maior média de gols por temporada?
 Dessa vez, preferi usar o Treemap. Nele, podemos ter uma visualização geral de todos os clubes sem precisar movimentar o gráfico.
 ### Aproveitamento:
@@ -111,15 +111,61 @@ A correlação entre cartões amarelos e vermelhos segue uma linha de tendência
 
 ### Gols
 
-![cvcv](https://github.com/user-attachments/assets/1ab421c1-9a16-4ac2-a0ad-3460090d0610)  ![cvcvcvc](https://github.com/user-attachments/assets/9a8736ce-cdec-451c-a261-693bc9c17882)
+![cvcv](https://github.com/user-attachments/assets/1ab421c1-9a16-4ac2-a0ad-3460090d0610) 
 
+Percebe-se uma forte coreelação entre o saldo de gols e aproveitamento, podendo aplicar a regressão linear para previsão de um possível aproveitamento ou saldo de gols por meio da linha de tendência.
 
+![cvcvcvc](https://github.com/user-attachments/assets/6bed8234-639a-4982-857e-23516efa5c6d)
 
+Apesar disso, o que mais me chamou atenção foi o fato do saldo de gols afetar diretamente o aproveitamento e não possuir o mesmo nível de correlação entre a posição final na tabela. Conseguimos perceber isso por meio da disposição dos dados. Na figura do aproveitamento, percebemos uma maior proximidade dos pontos, representados pelos dados, e no gráfico de posição dados mais espalhados, representando um número maior de erro em relação a linha de tendência. Isso indica que o saldo de gols tem maior influência no aproveitamente do que na posição final na tabale, além do gráfico de posição ter erro de previsão maior. Isso ocorre devido ao fato de que o seu aproveitamento depende somente do seu desempenho, enquanto a posição depende, também, do desempenho de outras equipes.
 
+### Aproveitamento
 
+![apr1](https://github.com/user-attachments/assets/6dfc394e-85ad-40d0-8595-4d6df94a8a68)
 
+No treemap, observamos quais times tiveram o maior e pior desempenho nos últimos 11 anos. Ele é a média das médias dos aproveitamento por temporada, ou seja, mesmo que um time tenha jogado menos temporadas que outros, continua sendo justo em sua métrica. Além disso, ele possibilita fazer a filtragem dos clubes e comparar com a média de seus estados.
 
+![pr fla](https://github.com/user-attachments/assets/b20e3e9a-6b94-4c0b-a154-50a09bd6560b)
 
+Filtrando: Flamengo
+
+![pr vasco](https://github.com/user-attachments/assets/97570e77-e113-4266-a304-2a6c614fd58b)
+
+Filtrando: Vasco
+
+![temp](https://github.com/user-attachments/assets/2a9b3e3f-186e-4b1e-a612-5a8801be0791)
+
+O gráfico acima permite perceber quais times jogaram todas as temporadas de 2013 até 2023 e se não jogaram, quantas jogaram. Percebe-se então que as 7 primeiras posições permanesceram na serie A durante todos esses anos.
+
+![apr 11](https://github.com/user-attachments/assets/c54fccec-4bc4-43b9-b402-b7655eb011d5)
+
+A média de aproveitamento por estado é um excelente parâmetro para medir o desempenho dos times por estado e fazer uma análise temporal:
+
+![pr 2017](https://github.com/user-attachments/assets/9c8c05af-9c28-4cda-9842-bc8f96ca03e0)
+
+2013 - 2017
+
+![pr 2021](https://github.com/user-attachments/assets/617c9a2f-e216-42ff-ba80-b1752059fcde)
+
+2013 - 2021
+
+![pr 2023](https://github.com/user-attachments/assets/b6a0186c-cc48-4f6c-9d0a-fc2c8c01bac1)
+
+2013 - 2023
+
+Nota-se um aumento do desempenho de clubes Paulistas e Cariocas ao longo do tempo e diminuição de clubes Mineiros.
+
+### Campeões
+
+![camp](https://github.com/user-attachments/assets/94f0b9a7-40db-43d3-a1a8-3b1f329209e2)
+
+Gráfico de simples entendimento indicando o número de títulos por time. Palmeiras se destacando.
+
+![tab](https://github.com/user-attachments/assets/908e1e60-8629-4609-bd02-62c157e6a86a)
+
+O objetivo principal da criação dessa tabela foi mostrar como seria se o campeonato fosse disputado sem divisão de temporadas durante esses 11 anos. Nesse caso, podemos observar que o Flamengo seria o campeão pelo número de pontos. Trata-se de uma comparação injusta devido a não utilização de, por exemplo, medidas de tendência central, tendo em vista que o Flamengo só poderia ser comparado com times que permanesceram a mesma quantidade de temporadas na séria A. Ainda assim, a visualização por meio de tabela pode trazer insights em uma vizualização de dados, principalmente, conectadas a filtros. Por exemplo, o fato do Fluminense ter um grande número de cartões amarelos, vermelhos e derrotas comparado a outros times que também disputaram 11 temporadas e o saldo de gols do Palmeiras ser superior ao Flamengo, indicando que, apesar de fazer muitos gols, o Flamengo também toma muitos gols.
 
 
 ## Conclusão
+
+Dessa forma, percebe-se como a análise de dados é importante para a tomada de decisões e a importância de entender muito bem a base da estatística e aliar junto a ferramentas para obter insights significativos em seus projetos e empresas.
