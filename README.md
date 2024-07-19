@@ -10,7 +10,8 @@ Esta documentação tem como objetivo principal explicar as decisões voltadas a
  
 ## Perguntas
 Inicialmente, antes de manipularmos os dados, devemos nos perguntar o que queremos extrair dos mesmos. Em uma empresa, na maioria das vezes, teremos questionamentos prontos para solucionarmos com o dataset disponibilizado. Dessa forma, torna-se mais interessante, antes da manipulação, a criação de perguntas para que possamos respondê-las ao longo do projeto. Sendo assim, separei as perguntas em quatro categorias: Cartões, Gols, Aproveitamento e Campeões.
-###Cartões :
+
+### Cartões :
 - Qual a média de cartões amarelos por jogo e temporada? Além disso, gostaria de poder comparar a média de cartões geral com a média invidial dos clubes.
 - Qual foi o comportamento do número de cartões amarelos ao longo dos anos?
 - Existe uma relação forte entre o número de cartões amarelos e o aproveitamento dos clubes?
