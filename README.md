@@ -51,32 +51,36 @@ Ao subir no Power BI, selecionei a opção de criar colunas e escolhi a vírgula
 
 Após isso, revisei os tipos e modifiquei a maioria de caraceteres para inteiros, com o objetivo de facilitar a realização de cálculos e criação de gráficos. Além disso, achei um erro, no qual, os clubes Atlético Mineiro e Athletico Paranaense estavam com o mesmo nome "Atlético", então mesclei as colunas "Time" e "UF" mas antes criei uma cópia de UF para utilizar em futuros cálculos. Depois, revisei os dados e segui para a criação das métricas e gráficos.
 
-## Respondendo as perguntas
+## Como foram respondidas as perguntas
 ### Cartões Amarelos:
 #### Qual a média geral de cartões amarelos por jogo e temporada? Além disso, gostaria de poder comparar a média de cartões geral com a média invidial dos clubes.
 Criei uma nova tabela apenas para colocar todas as novas medidas que irão ser criadas. Após isso, criei a medida média de cartões amarelos utilizando o seguinte código:
-![Captura de tela 2024-07-19 150415](https://github.com/user-attachments/assets/665d8929-1671-484e-bde4-070c5e93bb83)
-
-- Qual foi o comportamento do número de cartões amarelos ao longo dos anos?
-- Existe uma relação forte entre o número de cartões amarelos e o aproveitamento dos clubes?
-- Quais os clubes com maior média de cartões amarelos por temporada?
+![df](https://github.com/user-attachments/assets/a8ba6131-58bd-407d-8348-96d73ebdd3e8)
+Este código DAX calcula a média dos cartões amarelos por ano. Ele faz isso iterando por cada ano distinto presente na coluna 'BrasileiraoBase'[Ano] e, para cada ano, calcula a média dos cartões amarelos ('BrasileiraoBase'[Cartões Amarelos]) nesse ano. Finalmente, ele calcula a média desses valores resultantes.
+Resumidamente, calcula a média das médias anuais. Eu poderia ter feito a média de muitas formas, por exemplo, somando todos os cartões amarelos e dividindo pelo número de temporadas ou utilizando medianas. Porém, nesse caso, a média das médias é mais acertivo por não ser tão sensível aos anos atípicos e, ao mesmo tempo, não anular totalmente os outliers. Esse lógica será usada para a maioria dos casos desse projeto.
+Além disso, para a comparar a média geral e individual, criei cartões com a mesma fórmula, porém, pode-se aplicar filtros de clubes neles.
+#### Qual foi o comportamento do número de cartões amarelos ao longo dos anos?
+Pensando na melhor vizualização ao longo do tempo, foi utilizado o gráfico de linhas.
+#### Existe uma relação forte entre o número de cartões amarelos e o aproveitamento dos clubes?
+Para análise de relação entre uma variável e outra utilizei o gráfico de dispersão, usando correlação e traçando a linha de tendência para uma possível regressão linear.
+#### Quais os clubes com maior média de cartões amarelos por temporada?
+Utilizei o gráfico de barras para esta análise com o objetivo de evidenciar os maiores números e, ao mesmo tempo, permitir a analise de todos os clubes.
 ### Cartões Vermelhos:
-- Qual a média geral de cartões vermelhos por jogo e temporada? Além disso, gostaria de poder comparar a média de cartões geral com a média invidial dos clubes.
-- Qual foi o comportamento do número de cartões vermelhos ao longo dos anos?
-- Existe uma relação forte entre o número de cartões amarelos e o número de cartões vermelhos?
-- Quais os clubes com maior média de cartões vermelhos por temporada?
+Usada a mesma lógica que os cartões amarelos
 ### Gols: 
-*Observação: Gols contra = tomados pela equipe. Gols pró = Marcados pela equipe.*
-- Qual a média geral de gols pró por temporada? Além disso, gostaria de poder comparar a média de gols pró geral com a média invidial dos clubes.
-- Qual a média geral de gols contra por temporada? Além disso, gostaria de poder comparar a média de gols contra geral com a média invidial dos clubes.
-- Qual a relação entre Pontos e Saldo de Gols?
-- Qual a relação entre Posição e Saldo de Gols?
-- Quais os clubes com maior média de gols por temporada?
+#### 4 primeiras perguntas 
+utilizamos a mesma lógica das anteriores
+#### Quais os clubes com maior média de gols por temporada?
+Dessa vez, preferi usar o Treemap. Nele, podemos ter uma vizualização geral de todos os clubes sem precisar movimentar o gráfico.
 ### Aproveitamento:
-- Quais times disputaram mais temporadas?
-- Qual a média de aproveitamento por estado?
-- Quais times tiveram maior aproveitamento médio por temporada
+#### Quais times disputaram mais temporadas?
+Criei a medida Temporadas Disputadas = CALCULATE(COUNT('BrasileiraoBase'[Ano]))
+Ela soma o número de vezes que o ano aparece junto a outra coluna que no caso será o time. Poderia ter usado COUNTDISTINCT, porém, nesse caso, não há diferença, tendo em vista que temos apenas uma linha no máximo por time em cada ano.
+#### outras 2 perguntas utilizei a mesmo lógica das anteiores
 ### Campeões:
-- Gostaria de vizualizar a soma de todos os dados em uma única tabela
-- Quais times fizeram mais pontos ao longo de todas temporadas?
-- Quais foram os campeões e quantos títulos tiveram cada um?
+#### Gostaria de vizualizar a soma de todos os dados em uma única tabela
+ Criei gráfico tabela e adicionei as colunas do gráfico padrão da CBF
+Quais times fizeram mais pontos ao longo de todas temporadas?
+Representei pelo gráfico de barras para dar mais ênfase a diferença das equipes
+#### Quais foram os campeões e quantos títulos tiveram cada um?
+Como são poucos clubes, utilizei o gráfico rosca que nos dá toda informação de forma proporcional.
