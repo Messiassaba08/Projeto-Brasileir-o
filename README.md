@@ -45,9 +45,36 @@ Inicialmente, antes de manipularmos os dados, devemos nos perguntar o que querem
 ## Tratamento dos dados
 O Primeiro passo após baixar a tabela com os dados no site Kaggle(Link da base de dados no início da documentação), foi transformar os dados dentro do Power BI. Os dados, em formato .csv, foram formatados separados apenas por vírgula.
 ![image](https://github.com/user-attachments/assets/1d404939-9d04-4e82-b7e8-26066e19c80c)
-
 Ao subir no Power BI, selecionei a opção de criar colunas e escolhi a vírgula como separador, tendo esse resultado:
 ![image](https://github.com/user-attachments/assets/9d6e4328-3f61-488f-8540-7f80e15f0de0)
+Após isso, revisei os tipos e modifiquei a maioria de caraceteres para inteiros, com o objetivo de facilitar a realização de cálculos e criação de gráficos. Além disso, achei um erro, no qual, os clubes Atlético Mineiro e Athletico Paranaense estavam com o mesmo nome "Atlético", então mesclei as colunas "Time" e "UF" mas antes criei uma cópia de UF para utilizar em futuros cálculos. Depois, revisei os dados e segui para a criação das métricas e gráficos.
 
-Após isso, revisei os tipos e modifiquei a maioria de caraceteres para inteiros, com o objetivo de facilitar a realização de cálculos e criação de gráficos. Agora iremos iniciar a criação dos gráficos.
+## Respondendo as perguntas
+### Cartões Amarelos:
+#### Qual a média geral de cartões amarelos por jogo e temporada? Além disso, gostaria de poder comparar a média de cartões geral com a média invidial dos clubes.
+Criei uma nova tabela apenas para colocar todas as novas medidas que irão ser criadas. Após isso, criei a medida média de cartões amarelos utilizando o seguinte código:
+![Captura de tela 2024-07-19 150415](https://github.com/user-attachments/assets/665d8929-1671-484e-bde4-070c5e93bb83)
 
+- Qual foi o comportamento do número de cartões amarelos ao longo dos anos?
+- Existe uma relação forte entre o número de cartões amarelos e o aproveitamento dos clubes?
+- Quais os clubes com maior média de cartões amarelos por temporada?
+### Cartões Vermelhos:
+- Qual a média geral de cartões vermelhos por jogo e temporada? Além disso, gostaria de poder comparar a média de cartões geral com a média invidial dos clubes.
+- Qual foi o comportamento do número de cartões vermelhos ao longo dos anos?
+- Existe uma relação forte entre o número de cartões amarelos e o número de cartões vermelhos?
+- Quais os clubes com maior média de cartões vermelhos por temporada?
+### Gols: 
+*Observação: Gols contra = tomados pela equipe. Gols pró = Marcados pela equipe.*
+- Qual a média geral de gols pró por temporada? Além disso, gostaria de poder comparar a média de gols pró geral com a média invidial dos clubes.
+- Qual a média geral de gols contra por temporada? Além disso, gostaria de poder comparar a média de gols contra geral com a média invidial dos clubes.
+- Qual a relação entre Pontos e Saldo de Gols?
+- Qual a relação entre Posição e Saldo de Gols?
+- Quais os clubes com maior média de gols por temporada?
+### Aproveitamento:
+- Quais times disputaram mais temporadas?
+- Qual a média de aproveitamento por estado?
+- Quais times tiveram maior aproveitamento médio por temporada
+### Campeões:
+- Gostaria de vizualizar a soma de todos os dados em uma única tabela
+- Quais times fizeram mais pontos ao longo de todas temporadas?
+- Quais foram os campeões e quantos títulos tiveram cada um?
