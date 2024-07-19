@@ -43,9 +43,11 @@ Inicialmente, antes de manipularmos os dados, devemos nos perguntar o que querem
 
 ## Tratamento dos dados
 O Primeiro passo após baixar a tabela com os dados no site Kaggle(Link da base de dados no início da documentação), foi transformar os dados dentro do Power BI. Os dados, em formato .csv, foram formatados separados apenas por vírgula.
+
 ![image](https://github.com/user-attachments/assets/1d404939-9d04-4e82-b7e8-26066e19c80c)
 
 Ao subir no Power BI, selecionei a opção de criar colunas e escolhi a vírgula como separador, tendo esse resultado:
+
 ![image](https://github.com/user-attachments/assets/9d6e4328-3f61-488f-8540-7f80e15f0de0)
 
 Após isso, revisei os tipos e modifiquei a maioria de caraceteres para inteiros, com o objetivo de facilitar a realização de cálculos e criação de gráficos. Além disso, achei um erro, no qual, os clubes Atlético Mineiro e Athletico Paranaense estavam com o mesmo nome "Atlético", então mesclei as colunas "Time" e "UF" mas antes criei uma cópia de UF para utilizar em futuros cálculos. Depois, revisei os dados e segui para a criação das métricas e gráficos. Mais tarde, percebi que o América Futebol Clube estava sendo representado de duas formas: América e America, em
@@ -108,6 +110,12 @@ Percebe-se um leve aumento do número de cartões vermelhos, não tão expressiv
 A correlação entre cartões amarelos e vermelhos segue uma linha de tendência levemente inclinada para cima, indicando que pode haver influência, mas que não há um grande nível de significância.
 
 ### Gols
+
+![cvcv](https://github.com/user-attachments/assets/1ab421c1-9a16-4ac2-a0ad-3460090d0610)  ![cvcvcvc](https://github.com/user-attachments/assets/9a8736ce-cdec-451c-a261-693bc9c17882)
+
+
+
+
 
 
 
