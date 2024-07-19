@@ -55,7 +55,9 @@ Após isso, revisei os tipos e modifiquei a maioria de caraceteres para inteiros
 ### Cartões Amarelos:
 #### Qual a média geral de cartões amarelos por jogo e temporada? Além disso, gostaria de poder comparar a média de cartões geral com a média invidial dos clubes.
 Criei uma nova tabela apenas para colocar todas as novas medidas que irão ser criadas. Após isso, criei a medida média de cartões amarelos utilizando o seguinte código:
+
 ![df](https://github.com/user-attachments/assets/a8ba6131-58bd-407d-8348-96d73ebdd3e8)
+
 Este código DAX calcula a média dos cartões amarelos por ano. Ele faz isso iterando por cada ano distinto presente na coluna 'BrasileiraoBase'[Ano] e, para cada ano, calcula a média dos cartões amarelos ('BrasileiraoBase'[Cartões Amarelos]) nesse ano. Finalmente, ele calcula a média desses valores resultantes.
 Resumidamente, calcula a média das médias anuais. Eu poderia ter feito a média de muitas formas, por exemplo, somando todos os cartões amarelos e dividindo pelo número de temporadas ou utilizando medianas. Porém, nesse caso, a média das médias é mais acertivo por não ser tão sensível aos anos atípicos e, ao mesmo tempo, não anular totalmente os outliers. Esse lógica será usada para a maioria dos casos desse projeto.
 Além disso, para a comparar a média geral e individual, criei cartões com a mesma fórmula, porém, pode-se aplicar filtros de clubes neles.
