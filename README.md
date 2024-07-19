@@ -41,3 +41,8 @@ Inicialmente, antes de manipularmos os dados, devemos nos perguntar o que querem
 - Gostaria de vizualizar a soma de todos os dados em uma única tabela
 - Quais times fizeram mais pontos ao longo de todas temporadas?
 - Quais foram os campeões e quantos títulos tiveram cada um?
+
+## Tratamento dos dados
+O Primeiro passo após baixar a tabela com os dados no site Kaggle(Link da base de dados no início da documentação), foi transformar os dados dentro do Power BI. Os dados, em formato .csv, foram formatados separados apenas por vírgula:
+![image](https://github.com/user-attachments/assets/1d404939-9d04-4e82-b7e8-26066e19c80c)
+
