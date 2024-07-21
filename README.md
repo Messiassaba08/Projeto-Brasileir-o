@@ -117,6 +117,7 @@ Percebe-se uma forte coreelação entre o saldo de gols e aproveitamento, podend
 
 ![cvcvcvc](https://github.com/user-attachments/assets/6bed8234-639a-4982-857e-23516efa5c6d)
 
+
 Apesar disso, o que mais me chamou atenção foi o fato do saldo de gols afetar diretamente o aproveitamento e não possuir o mesmo nível de correlação entre a posição final na tabela. Conseguimos perceber isso por meio da disposição dos dados. Na figura do aproveitamento, percebemos uma maior proximidade dos pontos, representados pelos dados, e no gráfico de posição dados mais espalhados, representando um número maior de erro em relação a linha de tendência. Isso indica que o saldo de gols tem maior influência no aproveitamente do que na posição final na tabale, além do gráfico de posição ter erro de previsão maior. Isso ocorre devido ao fato de que o seu aproveitamento depende somente do seu desempenho, enquanto a posição depende, também, do desempenho de outras equipes.
 
 ### Aproveitamento
