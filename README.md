@@ -1,4 +1,4 @@
-# Analise de dados da série A do campeonato brasileiro entre 2013-2023
+# Análise de dados da série A do campeonato brasileiro entre 2013-2023
 
 Projeto criado para praticar o uso de Figma, Power BI e Estatística na análise de dados da série A do campeonato brasileiro de futebol de 2013 a 2023.
 - Link do Projeto concluído: https://app.powerbi.com/reportEmbed?reportId=c9745383-e81c-4d2a-bb91-61aae2911182&autoAuth=true&ctid=64126139-4352-4cd7-b1fb-2a971c6f69a6
@@ -7,7 +7,7 @@ Projeto criado para praticar o uso de Figma, Power BI e Estatística na análise
 - Link curso gratuito de Power BI: https://www.youtube.com/watch?v=YqH_gTzKZVI&list=PL29iyd7VxXguJm4NiXMKNlh5uNspQsxzv
 
 ## Introdução
-Esta documentação tem como objetivo principal explicar as decisões voltadas a analise de dados, uso de estatística e da ferramenta de manipulação de dados Power BI. Sendo assim, não irei especificar sobre a criação do dashboard pelo Figma, mas irei deixar o link dos vídeos que usei para auxiliar no uso da ferramenta logo acima. Também deixei o link do curso gratuito de Power BI que realizei para criação do projeto. Lembrando que apenas a visualização dos cursos não irá desenvolver suas habilidades com as ferramentas se não houver prática. Esse é o objetivo da criação desse projeto. :) 
+Esta documentação tem como objetivo principal explicar as decisões voltadas a análise de dados, uso de estatística e da ferramenta de manipulação de dados Power BI. Sendo assim, não irei especificar sobre a criação do dashboard pelo Figma, mas irei deixar o link dos vídeos que usei para auxiliar no uso da ferramenta logo acima. Também deixei o link do curso gratuito de Power BI que realizei para criação do projeto. Lembrando que apenas a visualização dos cursos não irá desenvolver suas habilidades com as ferramentas se não houver prática. Esse é o objetivo da criação desse projeto. :) 
 
 ## Estilização
 Por se tratar de futebol, optei por realizar a criação do dashboard de forma parecida com os games de futebol. Dessa forma, tive como inspiração de design os jogos FIFA e PES, criando o menu para navegação entre as análises e dentro do menu o histórico de colocação dos clubes em cada ano, podendo filtrar por clube de forma separada. Todo o projeto foi criado do zero, sem utilização de wallpapers ou formas prontas.
@@ -66,7 +66,7 @@ Pensando na melhor visualização ao longo do tempo, foi utilizado o gráfico de
 #### Existe uma relação forte entre o número de cartões amarelos e o aproveitamento dos clubes?
 Para análise de relação entre uma variável e outra utilizei o gráfico de dispersão, usando correlação e traçando a linha de tendência para uma possível regressão linear.
 #### Quais os clubes com maior média de cartões amarelos por temporada?
-Utilizei o gráfico de barras para esta análise com o objetivo de evidenciar os maiores números e, ao mesmo tempo, permitir a analise de todos os clubes.
+Utilizei o gráfico de barras para esta análise com o objetivo de evidenciar os maiores números e, ao mesmo tempo, permitir a análise de todos os clubes.
 ### Cartões Vermelhos:
 Usada a mesma lógica que os cartões amarelos
 ### Gols: 
